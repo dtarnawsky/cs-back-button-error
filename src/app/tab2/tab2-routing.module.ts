@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'thefirst',
-    loadChildren: () => import('./thefirst/thefirst.module').then( m => m.ThefirstPageModule)
+    loadChildren: () => import('./thefirst/thefirst.module').then( m => m.ThefirstPageModule),
   },
   {
     path: 'thesecond',
