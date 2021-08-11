@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- <ion-button id="ArrowBackButton2" (click)="goBack()" class="back-button">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </ion-button> -->
+    </ion-buttons>
+    <ion-title>thesecond</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-grid-padding">
+    <ion-row class="ion-padding">
+      <ion-col>
+        <ion-list>
+          <ion-item class="ion-padding-bottom">
+            This page has disabled back, user cannot go to previous page, Also once the user goes out of this page they should not be retured to
+          this page upon clicking hardwareback.
+          </ion-item>
+          <ion-item class="ion-padding-bottom">
+            To Go out of this pge click on any of the tabs. 
+          </ion-item>
+          <ion-item class="ion-padding-bottom">
+            To reproduce the issue click hardware back if on android device. 
+            The first time the android-back-button.guard.ts willbe triggered and will deactivte the route.
+          </ion-item>
+          <ion-item class="ion-padding-bottom">
+            Upon the second click it takes me to theFirst.page.ts. The route guard is not triggred
+          </ion-item>
+          <ion-item class="ion-padding-bottom">
+            Also able to reproduce on chrome browser.
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

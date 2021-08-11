@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AndroidBackButtonGuard } from './core/android-back-button.guard';
+
 
 const routes: Routes = [
   {

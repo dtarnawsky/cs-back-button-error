@@ -1,5 +1,7 @@
 {
   "name": "hardwareBackApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
