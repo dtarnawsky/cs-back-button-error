@@ -16,6 +16,9 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // @ts-ignore: private option not yet exposed for public use
+    this.router.canceledNavigationResolution = 'computed';
+    
     this.cordovaInit();
     this.router.events.subscribe((event: NavigationStart) => {
       if (event instanceof NavigationStart) {
